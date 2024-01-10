@@ -41,7 +41,7 @@ function Cocktail_Recipe_Mood_Result(props) {
               className="Mood-Result__image"
               src={`${
                 random_MoodRecipe?.img_id
-                  ? `/assets/Cocktail_Type/${random_MoodRecipe?.img_id}.jpg`
+                  ? `https://dionysus-cocktail-cabinet-be.onrender.com/assets/Cocktail_Type/${random_MoodRecipe?.img_id}.jpg`
                   : ""
               } `}
               alt="Mood Status"

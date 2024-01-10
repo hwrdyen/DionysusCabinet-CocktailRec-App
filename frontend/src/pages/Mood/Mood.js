@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 //import gif
-import Bartending_Gif from "../../assets/Gifs/bartending_gif.gif";
+import Bartending_Gif from "../..https://dionysus-cocktail-cabinet-be.onrender.com/assets/Gifs/bartending_gif.gif";
 
 //import components
 import CocktailRecipeMoodResult from "../../components/Cocktail_Recipe_Mood_Result/Cocktail_Recipe_Mood_Result";
@@ -89,7 +89,7 @@ function Mood(props) {
               >
                 <img
                   className="Mood__item--image"
-                  src={`/assets/Mood_Type/${represent_mood?.image_name}.svg`}
+                  src={`https://dionysus-cocktail-cabinet-be.onrender.com/assets/Mood_Type/${represent_mood?.image_name}.svg`}
                   alt="Mood"
                 />
                 <p className="Mood__item--title">{represent_mood?.mood_name}</p>

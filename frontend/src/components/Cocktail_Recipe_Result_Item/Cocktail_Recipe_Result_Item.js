@@ -8,7 +8,7 @@ function Cocktail_Recipe_Result_Item(props) {
         <NavLink to={`/cocktail_recipe/${props.CurrentAlcoholRecipe_info.id}`}>
           <img
             className="Result-Item__image"
-            src={`/assets/Cocktail_Type/${props.CurrentAlcoholRecipe_info?.img_id}.jpg`}
+            src={`https://dionysus-cocktail-cabinet-be.onrender.com/assets/Cocktail_Type/${props.CurrentAlcoholRecipe_info?.img_id}.jpg`}
             alt="Cocktail Result"
           />
           <div className="Result-Item__title">

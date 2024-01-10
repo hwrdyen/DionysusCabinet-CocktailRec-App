@@ -58,7 +58,7 @@ function Alcohol_Cabinet(props) {
                   onClick={SelectAlcohol}
                 >
                   <img
-                    src={`/assets/Alcohol_Type/${alcohol_type?.image_name}.png`}
+                    src={`https://dionysus-cocktail-cabinet-be.onrender.com/assets/Alcohol_Type/${alcohol_type?.image_name}.png`}
                     alt={`${alcohol_type?.alcohol_name}`}
                     className="Alcohol_Cabinet__block_image"
                   />
