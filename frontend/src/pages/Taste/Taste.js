@@ -17,9 +17,7 @@ function Taste(props) {
     setLoading(true);
     function GetTastePreferencesList() {
       return axios
-        .get(
-          `https://dionysus-cocktail-cabinet-be.onrender.com/taste_preferences_list`
-        )
+        .get(`/taste_preferences_list`)
         .then((element) => {
           let taste_preferences_list_info = element.data;
           setTastePreferencesList(taste_preferences_list_info);

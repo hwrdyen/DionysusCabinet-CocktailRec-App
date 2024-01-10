@@ -19,9 +19,7 @@ function Mood(props) {
     setLoading(true);
     function GetRepresentMoodList() {
       return axios
-        .get(
-          `https://dionysus-cocktail-cabinet-be.onrender.com/represent_mood_list`
-        )
+        .get(`/represent_mood_list`)
         .then((element) => {
           let represent_mood_list_info = element.data;
           setRepresentMoodList(represent_mood_list_info);
@@ -91,7 +89,7 @@ function Mood(props) {
               >
                 <img
                   className="Mood__item--image"
-                  src={`https://dionysus-cocktail-cabinet-be.onrender.com/assets/Mood_Type/${represent_mood?.image_name}.svg`}
+                  src={`/assets/Mood_Type/${represent_mood?.image_name}.svg`}
                   alt="Mood"
                 />
                 <p className="Mood__item--title">{represent_mood?.mood_name}</p>

@@ -26,7 +26,7 @@ function Alcohol_Cabinet(props) {
     setLoading(true);
     function GetAlcoholList() {
       return axios
-        .get(`https://dionysus-cocktail-cabinet-be.onrender.com/alcohol_list`)
+        .get(`/alcohol_list`)
         .then((element) => {
           setLoading(false);
           let alcohol_list_info = element.data;
@@ -58,7 +58,7 @@ function Alcohol_Cabinet(props) {
                   onClick={SelectAlcohol}
                 >
                   <img
-                    src={`https://dionysus-cocktail-cabinet-be.onrender.com/assets/Alcohol_Type/${alcohol_type?.image_name}.png`}
+                    src={`/assets/Alcohol_Type/${alcohol_type?.image_name}.png`}
                     alt={`${alcohol_type?.alcohol_name}`}
                     className="Alcohol_Cabinet__block_image"
                   />

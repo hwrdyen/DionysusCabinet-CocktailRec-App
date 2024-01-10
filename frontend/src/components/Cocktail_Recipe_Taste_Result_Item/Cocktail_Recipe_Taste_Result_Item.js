@@ -8,7 +8,7 @@ function Cocktail_Recipe_Taste_Result_Item(props) {
         <NavLink to={`/cocktail_recipe/${props.CurrentTasteRecipeItem?.id}`}>
           <img
             className="Cocktail_Recipe_Taste_Result_Item--image"
-            src={`https://dionysus-cocktail-cabinet-be.onrender.com/assets/Cocktail_Type/${props.CurrentTasteRecipeItem?.img_id}.jpg`}
+            src={`/assets/Cocktail_Type/${props.CurrentTasteRecipeItem?.img_id}.jpg`}
             alt="Cocktail for Taste Result"
           />
           <div className="Cocktail_Recipe_Taste_Result_Item--title">

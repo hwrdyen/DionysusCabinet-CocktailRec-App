@@ -34,7 +34,7 @@ function Cocktail_Recipe_Page(props) {
           </div>
           <img
             className="Recipe__image"
-            src={`https://dionysus-cocktail-cabinet-be.onrender.com/assets/Cocktail_Type/${CurrentCocktailRecipe?.img_id}.jpg`}
+            src={`/assets/Cocktail_Type/${CurrentCocktailRecipe?.img_id}.jpg`}
             alt="Cocktail Recipe"
           />
         </div>
