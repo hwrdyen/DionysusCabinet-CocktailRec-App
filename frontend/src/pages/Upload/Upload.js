@@ -126,7 +126,10 @@ function Upload(props) {
   useEffect(() => {
     if (SuccessfullySubmit === true) {
       axios
-        .post(`/cocktails_list`, NewCocktailRecipe)
+        .post(
+          `https://dionysus-cocktail-cabinet-be.onrender.com/cocktails_list`,
+          NewCocktailRecipe
+        )
         .then((res) => {
           console.log(res);
           setSuccessfullySubmit(false);

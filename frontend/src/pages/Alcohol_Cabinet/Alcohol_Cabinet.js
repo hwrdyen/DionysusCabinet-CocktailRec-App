@@ -26,7 +26,7 @@ function Alcohol_Cabinet(props) {
     setLoading(true);
     function GetAlcoholList() {
       return axios
-        .get(`/alcohol_list`)
+        .get(`https://dionysus-cocktail-cabinet-be.onrender.com/alcohol_list`)
         .then((element) => {
           setLoading(false);
           let alcohol_list_info = element.data;

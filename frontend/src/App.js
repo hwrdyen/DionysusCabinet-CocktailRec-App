@@ -24,11 +24,13 @@ function App() {
 
   useEffect(() => {
     function GetAllRecipesInfo() {
-      return axios.get(`/cocktails_list`).then((element) => {
-        let recipes_info = element.data;
-        setAllRecipesInfo(recipes_info);
-        setRefetchRecipe(false);
-      });
+      return axios
+        .get(`https://dionysus-cocktail-cabinet-be.onrender.com/cocktails_list`)
+        .then((element) => {
+          let recipes_info = element.data;
+          setAllRecipesInfo(recipes_info);
+          setRefetchRecipe(false);
+        });
     }
     if (RefetchRecipe === true) {
       GetAllRecipesInfo();
@@ -37,17 +39,19 @@ function App() {
 
   useEffect(() => {
     function GetCurrentAlcoholRecipesInfo() {
-      return axios.get(`/cocktails_list`).then((element) => {
-        let recipes_info = element.data;
-        if (CurrentAlcohol !== "") {
-          const current_alcohol_recipes_info = recipes_info.filter((recipe) =>
-            recipe.cocktail_included_alchohol.includes(CurrentAlcohol)
-          );
-          setCurrentAlcoholRecipes(current_alcohol_recipes_info);
-        } else {
-          setCurrentAlcoholRecipes([]);
-        }
-      });
+      return axios
+        .get(`https://dionysus-cocktail-cabinet-be.onrender.com/cocktails_list`)
+        .then((element) => {
+          let recipes_info = element.data;
+          if (CurrentAlcohol !== "") {
+            const current_alcohol_recipes_info = recipes_info.filter((recipe) =>
+              recipe.cocktail_included_alchohol.includes(CurrentAlcohol)
+            );
+            setCurrentAlcoholRecipes(current_alcohol_recipes_info);
+          } else {
+            setCurrentAlcoholRecipes([]);
+          }
+        });
     }
 
     GetCurrentAlcoholRecipesInfo();
