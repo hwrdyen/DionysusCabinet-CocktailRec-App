@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 //import gif
-import Bartending_Gif from "../..https://dionysus-cocktail-cabinet-be.onrender.com/assets/Gifs/bartending_gif.gif";
+import Bartending_Gif from "../../assets/Gifs/bartending_gif.gif";
 
 //import components
 import CocktailRecipeMoodResult from "../../components/Cocktail_Recipe_Mood_Result/Cocktail_Recipe_Mood_Result";

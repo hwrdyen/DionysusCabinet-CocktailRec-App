@@ -3,7 +3,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Hamburger from "hamburger-react";
 
-import dionysus_cabinet_logo from "../..https://dionysus-cocktail-cabinet-be.onrender.com/assets/Icons/dionysus_cabinet_logo.svg";
+import dionysus_cabinet_logo from "../../assets/Icons/dionysus_cabinet_logo.svg";
 
 function Header(props) {
   //onClick rerender the AllList

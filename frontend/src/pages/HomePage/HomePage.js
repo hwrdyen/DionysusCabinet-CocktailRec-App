@@ -2,7 +2,7 @@ import "./HomePage.scss";
 import { NavLink } from "react-router-dom";
 
 // import gif
-import bar_gif from "../..https://dionysus-cocktail-cabinet-be.onrender.com/assets/Gifs/homepage_bar_gif.gif";
+import bar_gif from "../../assets/Gifs/homepage_bar_gif.gif";
 
 function HomePage() {
   return (

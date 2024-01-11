@@ -1,7 +1,7 @@
 import "./Spinner.scss";
 
 // Assets
-import AutoRenewIcon from "../..https://dionysus-cocktail-cabinet-be.onrender.com/assets/Icons/autorenew_black_24dp.svg";
+import AutoRenewIcon from "../../assets/Icons/autorenew_black_24dp.svg";
 
 function Spinner() {
   return (

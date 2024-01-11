@@ -1,7 +1,7 @@
 import "./NotFound.scss";
 
 //import Gif
-import NotFoundGit from "../..https://dionysus-cocktail-cabinet-be.onrender.com/assets/Gifs/404_notfound.gif";
+import NotFoundGit from "../../assets/Gifs/404_notfound.gif";
 
 function NotFound() {
   return (
